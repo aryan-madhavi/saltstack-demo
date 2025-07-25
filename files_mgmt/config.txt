@@ -1,0 +1,9 @@
+
+Hello {{ grains['host'] }} from {{ grains['id'] }}
+
+Your system configurations are:-
+
+OS: {{ grains['oscodename'] }}
+IPv4: {{ grains['fqdn_ip4'] }}
+
+Updated on: {{ salt['cmd.run']('date') }}
