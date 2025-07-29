@@ -14,9 +14,9 @@ pipeline {
             target: '*',
             targettype: 'glob'
           ),
-          credentialsId: 'b5f40401-01b9-4b27-a4e8-8ae94bc90250',
+          credentialsId: 'saltuser-creds',
           saveFile: true,
-          servername: 'http://master.local:8000'
+          servername: 'http://172.31.6.109:8000'
         )
 
         script {
