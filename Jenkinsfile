@@ -8,7 +8,7 @@ pipeline {
           authtype: 'pam',
           clientInterface: local(
             function: 'state.apply',
-            arguments: 'files_mgmt',  // Name of the state in GitFS (without .sls extension)
+            arguments: 'nginx',  // Name of the state in GitFS (without .sls extension)
             blockbuild: true,
             jobPollTime: 6,
             target: '*',               // Apply the state to all minions
